@@ -22,23 +22,43 @@
 		<header class="header">
 			<div class="container header-container">
 				<a href="./index.html" class="header-logo"><span class="logo-color">Web</span>Studio</a>
-			<nav>
-				<ul class="header-nav list">
-					<li class="item"><a href="./index.html" class="header-nav-link link">Студія</a></li>
-					<li class="item"><a href="./portfolio.html" class="header-nav-link link">Портфоліо</a></li>
-					<li class="item"><a href="" class="header-nav-link link">Контакти</a></li>
+				<nav>
+					<ul class="header-nav list">
+						<li class="item">
+							<a href="./index.html" class="header-nav-link link current">Студія</a>
+						</li>
+						<li class="item">
+							<a href="./portfolio.html" class="header-nav-link link">Портфоліо</a>
+						</li>
+						<li class="item">
+							<a href="" class="header-nav-link link">Контакти</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="list header-contact-list">
+					<li class="item">
+						<a href="" class="header-contact link">
+							<svg class="mail-icon" width="16" height="12">
+								<use href="./images/icons.svg#icon-envelope"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li class="item">
+						<a href="" class="header-contact link">
+							<svg class="mail-icon" width="10" height="16">
+								<use href="./images/icons.svg#icon-smartphone"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
+					</li>
 				</ul>
-			</nav>
-			<ul class="list header-contact-list">
-				<li class="item"><a href="" class="header-contact link">info@devstudio.com</a></li>
-				<li class="item"><a href="" class="header-contact link">+38 096 111 11 11</a></li>
-			</ul>
 			</div>
 		</header>
 		<!--Головний розділ-->
 		<main>
 			<section class="hero-container">
-				<h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
+				<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
 				<button type="button" class="hero-button">Замовити послугу</button>
 			</section>
 
@@ -47,18 +67,38 @@
 					<h2 class="stealth-title">Наші переваги</h2>
 					<ul class="list benefits-list">
 						<li class="benefit-item">
+							<div class="benefit-icon">
+								<svg width="70" height="70">
+									<use href="./images/icons.svg#icon-antenna"></use>
+								</svg>
+							</div>
 							<h3 class="benefits-title">УВАГА ДО ДЕТАЛЕЙ</h3>
 							<p class="benefits-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
 						</li>
 						<li class="benefit-item">
+							<div class="benefit-icon">
+								<svg width="70" height="70">
+									<use href="./images/icons.svg#icon-clock"></use>
+								</svg>
+							</div>
 							<h3 class="benefits-title">ПУНКТУАЛЬНІСТЬ</h3>
 							<p class="benefits-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
 						</li>
 						<li class="benefit-item">
+							<div class="benefit-icon">
+								<svg width="70" height="70">
+									<use href="./images/icons.svg#icon-diagram"></use>
+								</svg>
+							</div>
 							<h3 class="benefits-title">ПЛАНУВАННЯ</h3>
 							<p class="benefits-text">Так само консультація з широким активом значною мірою зумовлює.</p>
 						</li>
 						<li class="benefit-item">
+							<div class="benefit-icon">
+								<svg width="70" height="70">
+									<use href="./images/icons.svg#icon-astronaut"></use>
+								</svg>
+							</div>
 							<h3 class="benefits-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
 							<p class="benefits-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
 						</li>
@@ -82,6 +122,7 @@
 				</ul>
 				</div>
 			</section>
+			<!-- Команда -->
 			<section class="team">
 				<div class="container">
 					<h2 class="title-center">Наша команда</h2>
@@ -288,51 +329,55 @@
 				</div>
 			</section>
 		</main>
-
 		<!--Підвал-->
-		<footer class="footer footer-container">
-			<div class="container">
-				<a href="./index.html" class="footer-logo"><span class="logo-color">Web</span>Studio</a>
-			<address>
-				<ul class="list list-footer-contact">	
-					<li class="footer-contact-item"><a href="" class="footer-contact link">м. Київ, пр-т Лесі Українки, 26</a></li>
-					<li class="footer-contact-item"><a href="mailto:info@devstudio.com" class="footer-contact footer-communication link">info@devstudio.com</a></li>
-					<li class="footer-contact-item"><a href="tel:+380961111111" class="footer-contact footer-communication link">+38 096 111 11 11</a></li>
-				</ul>
-			</address>
-			</div>
-			<div class="">
-				<h3 class="footer-soc-title">приєднуйтесь</h3>
-				<ul class="footer-soc-list">
-					<li class="footer-soc-item">
-						<a href="" class="footer-soc-link">
-							<svg class="footer-soc-icon">
-								<use href="./images/icons.svg#icon-instagram" width="20px" height="20px"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="footer-soc-item">
-						<a href="" class="footer-soc-link">
-							<svg class="footer-soc-icon">
-								<use href="./images/icons.svg#icon-twitter" width="20px" height="20px"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="footer-soc-item">
-						<a href="" class="footer-soc-link">
-							<svg class="footer-soc-icon">
-								<use href="./images/icons.svg#icon-facebook" width="20px" height="20px"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="footer-soc-item">
-						<a href="" class="footer-soc-link">
-							<svg class="footer-soc-icon">
-								<use href="./images/icons.svg#icon-linkedin" width="20px" height="20px"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
+		<footer class="footer">
+			<div class="container footer-container">
+				<div>
+					<a href="./index.html" class="footer-logo"><span class="logo-color">Web</span>Studio</a>
+					<address>
+						<ul class="list list-footer-contact">
+							<li class="footer-contact-item"><a href="" class="footer-contact link">м. Київ, пр-т Лесі Українки, 26</a>
+							</li>
+							<li class="footer-contact-item"><a href="mailto:info@devstudio.com"
+									class="footer-contact footer-communication link">info@devstudio.com</a></li>
+							<li class="footer-contact-item"><a href="tel:+380961111111"
+									class="footer-contact footer-communication link">+38 096 111 11 11</a></li>
+						</ul>
+					</address>
+				</div>
+				<div class="footer-soc">
+					<h3 class="footer-soc-title">приєднуйтесь</h3>
+					<ul class="footer-soc-list">
+						<li class="footer-soc-item">
+							<a href="" class="footer-soc-link">
+								<svg class="footer-soc-icon">
+									<use href="./images/icons.svg#icon-instagram" width="20px" height="20px"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-soc-item">
+							<a href="" class="footer-soc-link">
+								<svg class="footer-soc-icon">
+									<use href="./images/icons.svg#icon-twitter" width="20px" height="20px"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-soc-item">
+							<a href="" class="footer-soc-link">
+								<svg class="footer-soc-icon">
+									<use href="./images/icons.svg#icon-facebook" width="20px" height="20px"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-soc-item">
+							<a href="" class="footer-soc-link">
+								<svg class="footer-soc-icon">
+									<use href="./images/icons.svg#icon-linkedin" width="20px" height="20px"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</footer>
 	</body>

@@ -39,6 +39,10 @@ img {
     clip: rect(0 0 0 0);
 }
 
+.item .current {
+    color: var(--color-hover);
+}
+
 /* ---------------- Хедер---------------- */
 
 .header {
@@ -108,13 +112,21 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+    display: flex;
+    align-items: center;
 }
 
 .header-contact-list {
     display: flex;
     margin-left: auto;
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 32px;    
+}
+
+.mail-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    
 }
 
 .link {
@@ -130,20 +142,26 @@ a:focus {
 /* --------------Герой----------------- */
 
 .hero-container {
-    background-color: #2F303A;    
+    max-width: 1600px;
+    max-height: 600px;   
     margin: 0 auto;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-        background-image: linear-gradient(
+    background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
             ),
-        url(../images/hero-img.jpg);
+        url(../images/hero-img.jpg);        
     }
 
 
 .hero-title {
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -167,6 +185,7 @@ a:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    cursor: pointer;
 }
 
 .hero-button:hover,
@@ -196,6 +215,17 @@ h2 {
 
 .benefit-item {
     width: 270px;
+}
+
+.benefit-icon {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
 }
 
 .benefits-list .benefit-item:not(:last-child) {
@@ -359,7 +389,8 @@ border-radius: 0px 0px 4px 4px;
 /*-------------------------- Футер-------------------------- */
 
 .footer-container {    
-    margin: 0 auto;    
+    display: flex;
+    align-items: baseline;
 }
 
 .footer {
@@ -381,7 +412,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .list-footer-contact {
-    /* margin-top: 20px; */
+    margin-top: 20px;
 }
 
 .footer-contact {
@@ -401,6 +432,10 @@ border-radius: 0px 0px 4px 4px;
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-soc {
+    margin-left: 70px;
+}
+
 .footer-soc-title {
     font-weight: 700;
     font-size: 14px;
@@ -418,7 +453,7 @@ border-radius: 0px 0px 4px 4px;
 
 .footer-soc-item {
     width: 44px;
-    height: 44px;
+    height: 44px;    
 }
 
 .footer-soc-link {
@@ -429,7 +464,7 @@ border-radius: 0px 0px 4px 4px;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-soc-icon {
@@ -438,7 +473,10 @@ border-radius: 0px 0px 4px 4px;
     fill: #FFFFFF;
 }
 
-
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: var(--color-hover);
+}
 
 /*--------------------- Стиль Портфоліо ----------------------*/
 
@@ -462,7 +500,7 @@ border-radius: 0px 0px 4px 4px;
     border: none;
     padding: 6px 22px;
     border-radius: 4px;
-    /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
+    cursor: pointer;    
 }
 
 .filter-button-projects:hover,
@@ -470,6 +508,9 @@ border-radius: 0px 0px 4px 4px;
     background: #2196F3;
     color: #FFFFFF;
     border: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-projects {
@@ -505,6 +546,11 @@ border-radius: 0px 0px 4px 4px;
 
 .project-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
+}
+
+.project-item:hover,
+.project-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-text {
