@@ -325,14 +325,12 @@ border-radius: 0px 0px 4px 4px;
 
 .client-list {
     display: flex;
-    justify-content: center;
     gap: 30px;
 }
 
 .client-item {
     width: 170px;
-    height: 92px;
-    background-color: yellow;
+    height: 92px;    
 }
 
 .client-link {
@@ -341,20 +339,34 @@ border-radius: 0px 0px 4px 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    fill:  #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+    border: 1px solid var(--color-hover);
+    color: var(--color-hover);
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+    fill: var(--color-hover);
 }
 
 
-/* Футер */
+/*-------------------------- Футер-------------------------- */
 
 .footer-container {    
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
 
 .footer {
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 43px;
+    display: flex;
 }
 
 .footer-logo {
@@ -369,7 +381,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .list-footer-contact {
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .footer-contact {
@@ -378,6 +390,7 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    margin-right: 70px;
 }
 
 .list-footer-contact .footer-contact-item:not(:last-child) {
@@ -388,7 +401,46 @@ border-radius: 0px 0px 4px 4px;
     color: rgba(255, 255, 255, 0.6);
 }
 
-/* Стиль Портфоліо */
+.footer-soc-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer-soc-list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-soc-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.footer-soc-icon {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}
+
+
+
+/*--------------------- Стиль Портфоліо ----------------------*/
 
 .portfolio {
     background: #FFFFFF;
